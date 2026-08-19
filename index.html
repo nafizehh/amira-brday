@@ -243,7 +243,18 @@ body {
 </head>
 
 <body>
+<audio id="birthdaySong" loop preload="auto">
+    <source src="./Muttu-Muttu-Enna-Muttu[1].mp3" type="audio/mpeg">
+</audio>
 
+<script>
+const birthdaySong = document.getElementById("birthdaySong");
+
+document.addEventListener("click", () => {
+    birthdaySong.play().catch(() => {});
+});
+</script>
+    
 <!-- FIRST SCREEN -->
 <section id="question" class="screen">
 
